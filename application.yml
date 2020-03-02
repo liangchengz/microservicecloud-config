@@ -1,0 +1,18 @@
+#zuul:
+#  routes:
+#    a.serviceId: dept-provider
+#    a.path: /bbb/**
+#  ignored-services: "*"
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  application:
+    name: spring-cloud-dev
+---
+spring:
+  profiles: test
+  application:
+    name: spring-cloud-test
