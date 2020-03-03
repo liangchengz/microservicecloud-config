@@ -45,8 +45,6 @@ eureka:
 management:
   endpoints:
     web:
-      exposure:
-        include: *
       base-path: /
   health:
     show-details: always
