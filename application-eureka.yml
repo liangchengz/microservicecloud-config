@@ -9,7 +9,6 @@ server:
 eureka:
   instance:
     hostname: zc.eureka7001.com
-    prefer-ip-address: true
   client:
     #false表示不向注册中心注册自己
     register-with-eureka: false
@@ -25,7 +24,6 @@ server:
 eureka:
   instance:
     hostname: zc.eureka7002.com
-    prefer-ip-address: true
   client:
     #false表示不向注册中心注册自己
     register-with-eureka: false
@@ -41,7 +39,6 @@ server:
 eureka:
   instance:
     hostname: zc.eureka7001.com
-    prefer-ip-address: true
   client:
     #false表示不向注册中心注册自己
     register-with-eureka: false
