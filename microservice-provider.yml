@@ -32,6 +32,8 @@ eureka:
     service-url:
       defaultZone: http://zc.eureka7002.com:7002/eureka/,http://zc.eureka7003.com:7003/eureka/,http://zc.eureka7001.com:7001/eureka/
   instance:
+    status-page-url-path: /info
+    health-check-url-path: /health
     home-page-url-path: /
     prefer-ip-address: true
 
