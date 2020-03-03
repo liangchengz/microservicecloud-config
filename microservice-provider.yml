@@ -44,6 +44,9 @@ management:
   health:
     show-details: always
 ---
+eureka:
+  instance:
+    instance-id: zc.eureka8001.com
 spring:
   datasource:
     # useSSL=false这个参数如果不挟带的话使用SQL语句会报警告
@@ -55,6 +58,9 @@ server:
 info:
   app.name: microservicecloud-provide8001
 ---
+eureka:
+  instance:
+    instance-id: zc.eureka8002.com
 spring:
   datasource:
     # useSSL=false这个参数如果不挟带的话使用SQL语句会报警告
@@ -66,6 +72,9 @@ server:
 info:
   app.name: microservicecloud-provide8002
 ---
+eureka:
+  instance:
+    instance-id: zc.eureka8003.com
 spring:
   datasource:
     # useSSL=false这个参数如果不挟带的话使用SQL语句会报警告
