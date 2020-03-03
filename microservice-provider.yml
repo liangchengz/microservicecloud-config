@@ -30,7 +30,7 @@ info:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:7001/eureka/,http://127.0.0.1:7002/eureka/,http://127.0.0.1:7003/eureka/
+      defaultZone: http://zc.eureka7002.com:7002/eureka/,http://zc.eureka7003.com:7003/eureka/,http://zc.eureka7001.com:7001/eureka/
   instance:
     home-page-url-path: /
     instance-id: test-cloud-dept-config-service
