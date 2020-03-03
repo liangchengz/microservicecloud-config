@@ -7,8 +7,6 @@ spring:
     username: root
     password: 123456zc
     driver-class-name: com.mysql.jdbc.Driver
-  application:
-    name: test-cloud-config-dept
   profiles:
     active: dev
 
