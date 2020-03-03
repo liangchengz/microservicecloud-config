@@ -1,0 +1,78 @@
+spring:
+  datasource:
+    username: root
+    password: 123456zc
+    driver-class-name: com.mysql.jdbc.Driver
+  profiles:
+    active: provider8001
+
+# mybatis配置信息
+mybatis:
+  type-aliases-package: com.example.microservicestuzcapi.pojo
+  mapper-locations: classpath:mapper/*.xml
+  # 在spring的配置文件指定了mybatis的配置文件 就不能在spring的配置里面写入mybatis的配置 config-location: classpath:sqlMapConfig.xml
+  # 是否开启mybatis的驼峰命名法
+  configuration:
+    map-underscore-to-camel-case: true
+
+# 打印SQL语句
+logging:
+  level:
+    com.example.backmybatis.mapper: DEBUG
+
+# /info 展示的该微服务相关信息
+info:
+  company.name: www.zc.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+# eureka设置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7005/eureka/
+  instance:
+    home-page-url-path: /
+    instance-id: test-cloud-dept-config-service
+    prefer-ip-address: true
+
+# actuator设置
+management:
+  endpoints:
+    web:
+      base-path: /
+  health:
+    show-details: always
+---
+spring:
+  datasource:
+    # useSSL=false这个参数如果不挟带的话使用SQL语句会报警告
+    url: jdbc:mysql://192.168.0.132:3306/test5?useSSL=false
+  profiles: provider8001
+# 端口
+server:
+  port: 8001
+info:
+  app.name: microservicecloud-provide8001
+---
+spring:
+  datasource:
+    # useSSL=false这个参数如果不挟带的话使用SQL语句会报警告
+    url: jdbc:mysql://192.168.0.132:3306/test6?useSSL=false
+  profiles: provider8002
+# 端口
+server:
+  port: 8002
+info:
+  app.name: microservicecloud-provide8002
+---
+spring:
+  datasource:
+    # useSSL=false这个参数如果不挟带的话使用SQL语句会报警告
+    url: jdbc:mysql://192.168.0.132:3306/test7?useSSL=false
+  profiles: provider8003
+# 端口
+server:
+  port: 8003
+info:
+  app.name: microservicecloud-provide8003
