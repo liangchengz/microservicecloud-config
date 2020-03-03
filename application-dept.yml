@@ -1,3 +1,6 @@
+#spring:
+#  application:
+#    name: application-dept
 # 数据源配置信息
 spring:
   datasource:
@@ -6,7 +9,6 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: test-cloud-config-dept
-  active: dev
   profiles:
     active: dev
 
@@ -56,7 +58,7 @@ spring:
   profiles: dev
 # 端口
 server:
-  port: 8089
+  port: 9990
 ---
 spring:
   datasource:
@@ -65,4 +67,4 @@ spring:
   profiles: test
 # 端口
 server:
-  port: 8090
+  port: 9991
