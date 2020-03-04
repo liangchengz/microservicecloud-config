@@ -51,7 +51,7 @@ eureka:
 spring:
   datasource:
     # useSSL=false这个参数如果不挟带的话使用SQL语句会报警告
-    url: jdbc:mysql://192.168.1.103:3306/test5?useSSL=false
+    url: jdbc:mysql://192.168.0.132:3306/test5?useSSL=false
   profiles: provider8001
 # 端口
 server:
@@ -65,7 +65,7 @@ eureka:
 spring:
   datasource:
     # useSSL=false这个参数如果不挟带的话使用SQL语句会报警告
-    url: jdbc:mysql://192.168.1.103:3306/test6?useSSL=false
+    url: jdbc:mysql://192.168.0.132:3306/test6?useSSL=false
   profiles: provider8002
 # 端口
 server:
@@ -79,7 +79,7 @@ eureka:
 spring:
   datasource:
     # useSSL=false这个参数如果不挟带的话使用SQL语句会报警告
-    url: jdbc:mysql://192.168.1.103:3306/test7?useSSL=false
+    url: jdbc:mysql://192.168.0.132:3306/test7?useSSL=false
   profiles: provider8003
 # 端口
 server:
